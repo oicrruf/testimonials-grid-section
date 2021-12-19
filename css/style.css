@@ -1,0 +1,120 @@
+:root {
+  --bg-main: #edf2f8;
+  --purple: #733fc8;
+  --gray: #49556b;
+  --white: #ffffff;
+  --gray-dark: #18202d;
+  --gap-default: 20px;
+}
+
+body {
+  background-color: var(--bg-main);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto 25%;
+  gap: var(--gap-default);
+  margin-bottom: 10px;
+}
+.row {
+  display: grid;
+  border-radius: 8px;
+}
+.col {
+  display: grid;
+  gap: var(--gap-default);
+}
+.row.first {
+  display: grid;
+  grid-template-columns: auto 33%;
+  gap: var(--gap-default);
+  background-color: var(--bg-main) !important;
+}
+.row.second {
+  display: grid;
+  grid-template-columns: 33% auto;
+  gap: var(--gap-default);
+  background-color: var(--bg-main) !important;
+}
+.row.first > div:first-child {
+  background-color: var(--purple);
+  background-image: url("../images/double-quote.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100px;
+}
+.row.first > div:last-child {
+  background-color: var(--gray);
+}
+.row.second > div:first-child {
+  background-color: var(--white);
+}
+.row.second > div:last-child {
+  background-color: var(--gray-dark);
+}
+.col .row {
+  background-color: var(--white);
+}
+.customer {
+  display: grid;
+  grid-template-columns: 65px auto;
+}
+.customer h3,
+.customer h4 {
+  margin: 0px;
+}
+.avatar {
+  display: flex;
+  justify-content: start;
+}
+.avatar img {
+  border-radius: 50%;
+  border: rgba(255, 255, 255, 0.3) 4px solid;
+  padding: 3px;
+  width: 40px;
+}
+.avatar.-black img {
+  border: rgba(76, 82, 96, 0.3) 4px solid;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.-text__white-100 {
+  color: rgba(255, 255, 255, 1);
+}
+.-text__white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.-text__black-100 {
+  color: rgba(76, 82, 96, 1);
+}
+.-text__black-70 {
+  color: rgba(76, 82, 96, 0.7);
+}
+.card {
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.card > p {
+  margin-bottom: 0px;
+}
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.card p {
+  font-size: 14px;
+  line-height: 19px;
+}
